@@ -79,6 +79,63 @@ nav {
 
 }
 
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+footer a {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+ footer p {
+     color: white;
+ }
+
+footer nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+.social img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.social img:hover {
+    background-color:#494949;
+    border-radius: 50%;
+}
+
+.gallery {
+   width: 80%;
+   margin: auto;
+   display: flex; 
+   flex-wrap: wrap;
+   margin-bottom: 50px;
+}
+
+.photo-itm{
+    width: 25%;
+}
+.photo-itm img {
+    width: 221px;
+    height: 167px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    opacity: 0.7;
+}
+
+.photo-itm img:hover {
+    opacity: 0.1;
+}
+
 
 @media screen and (max-width:768px) {
     .topnav a:not(:first-child) {
@@ -110,6 +167,10 @@ nav {
     .advantages_item {
         width: 45%;
     }
+    .photo-itm{
+        width: 45%;
+        margin-left:10px ;
+    }
 }
 
 @media screen and (max-width:420px) {
@@ -119,4 +180,18 @@ nav {
     .advantages_item {
         width: 100%;
     }
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery {
+        width: auto;
+        margin: auto;
+    }
+    .photo-itm {
+        width: 70%;
+        margin: 0 auto;
+    }
+
 }
