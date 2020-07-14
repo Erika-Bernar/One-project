@@ -37,7 +37,7 @@ nav {
     background-color:  white;
     font-size: 14px;
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .topnav a {
@@ -236,7 +236,15 @@ footer nav a:hover {
     text-align: center;
 }
 
+#map {
+    width: 100%;
+    height: 400px;
 
+}
+
+main h1 {
+    text-align: center;
+}
 
 
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <title>Mirralise</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="/index.html"> <img class="grafficlogo" src="/img/logo.png" alt="logo"></a>
+        </div>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="/index.html">HOME</a>
+            <a href="/html/projects.html">PROJECTS</a>
+            <a href="/html/blog.html">BLOG</a>
+            <a href="/html/contact.html">CONTACTS</a>
+            <a href="/html/about.html">ABOUT</a>
+            <a href="/html/services.html">SERVICES</a>
+            <a href="/html/location.html">LOCATION</a>
+            <a id ="menu" href="#" class="icon">&#9776;</a>
+        </div>
+    </nav>
+
+    </header>
+    
+    <main>
+        <h1>location</h1>
+        <div id="map"></div>
+    </main>
+
+    <footer>
+        <nav>
+            <div class="" id="myTopnav">
+                <a href="/index.html">HOME</a>
+                <a href="/html/projects.html">PROJECTS</a>
+                <a href="/html/blog.html">BLOG</a>
+                <a href="/html/contact.html">CONTACTS</a>
+                <a href="/html/about.html">ABOUT</a>
+                <a href="/html/services.html">SERVICES</a>
+                <a href="/html/location.html">LOCATION</a>
+               
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="/index.html"><img class="graficlogo" src="/img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="social">
+            <a href="#"><img src="/img/footer/em.png" alt="email"></a>
+            <a href="#"><img src="/img/footer/face.png" alt="facebook"></a>
+            <a href="#"><img src="/img/footer/goo.png" alt="google"></a>
+            <a href="#"><img src="/img/footer/inst.png" alt="instagram"></a>
+            <a href="#"><img src="/img/footer/pint.png" alt="pinterest"></a>
+        </div>
+
+        <p>Web Devoloper Blog 2020</p>
+    </footer>
+
+
+
+    <script src="/js/script.js"></script>
+    <script async defer
+    script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 55.1089903, lng: 36.5823312};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 6, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDusv6vp4zUGSY9eecQemR780kreVgfqBE&callback=initMap">
+    </script>
+</body>
+</html>
